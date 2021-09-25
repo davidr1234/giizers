@@ -2,18 +2,18 @@ import logo from './logo.svg';
 import './App.css';
 import BarcodeScannerComponent from "react-qr-barcode-scanner";
 import React from 'react';
+import rivella from './7610097111072';
 
 function App() {
 
   const [data, setData] = React.useState("Not Found");
 
   const imageLoader = () => {
-    return (
-      <div>
-        
+    var imagePath = rivella.image.original;
+    console.log(imagePath);
 
-        <img src="https://image.migros.ch/2017-large/6fa8aec688e81a86612d4208aa87da936f408991/focus-vitamin-water-active.jpg"/>
-      </div>
+    return (
+      <img src={imagePath}/>
     )
   }
 
