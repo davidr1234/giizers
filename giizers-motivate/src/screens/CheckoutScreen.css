@@ -1,0 +1,14 @@
+.point {
+  display: inline-block;
+  position: relative;
+}
+.round {
+  transform: rotate(-90deg);
+  transition: all 1s ease-in-out;
+  
+  /* SVG */
+  fill: none;
+  stroke: rgb(175, 70, 0);
+  stroke-width: 8;
+  stroke-linecap: round;
+}

@@ -34,7 +34,11 @@ export default function ScanScreen(props) {
         wohl: data.m_check2?.animal_welfare?.rating,
       });
       props.appState.setProducts(p);
-      props.appState.navigateTo("SCAN-END");
+      if (Math.random() > 0.65) {
+        props.appState.navigateTo("SCAN-END");
+      } else {
+        props.appState.navigateTo("LIST");
+      }
     }
   };
 
