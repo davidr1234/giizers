@@ -1,0 +1,52 @@
+{
+  "id": "227222015100",
+  "language": "de",
+  "name": "Grill mi Kalbs Burger",
+  "image": {
+    "original": "https://image.migros.ch/original/874d8be8e2d71285a38063c6afaa348d9b3f8144/grill-mi-kalbs-burger.jpg",
+    "stack": "https://image.migros.ch/{stack}/874d8be8e2d71285a38063c6afaa348d9b3f8144/grill-mi-kalbs-burger.jpg"
+  },
+  "m_check2": {
+    "carbon_footprint": {
+      "image": {
+        "original": "https://image.migros.ch/original/9d08323177e1c1049855a7fb5c9e524f3c31b8fc.svg",
+        "stack": "https://image.migros.ch/{stack}/9d08323177e1c1049855a7fb5c9e524f3c31b8fc.svg"
+      },
+      "ground_and_sea_cargo": {
+        "kg_co2": 15.657,
+        "kg_co2_range": "≥10 kg CO₂eq / kg",
+        "co2_in_car_km": 87,
+        "rating": 1,
+        "production_in_percent": 99,
+        "packaging_in_percent": 1,
+        "transport_in_percent": 0
+      }
+    },
+    "animal_welfare": {
+      "rating": 3,
+      "label": "Tierwohl",
+      "image": {
+        "original": "https://image.migros.ch/original/b579eda0e9ab760bfd6b8538092c48ba03262644.svg",
+        "stack": "https://image.migros.ch/{stack}/b579eda0e9ab760bfd6b8538092c48ba03262644.svg"
+      }
+    }
+  },
+  "price": {
+    "valid_from": "2018-03-02T00:00:00+0100",
+    "valid_to": "9999-12-31T23:59:59+0100",
+    "currency": "CHF",
+    "source": "PriceRepository",
+    "item": {
+      "price": 6.9,
+      "quantity": 1,
+      "unit": "CU",
+      "varying_quantity": false,
+      "display_quantity": "240g"
+    },
+    "base": {
+      "price": 2.88,
+      "quantity": 100,
+      "unit": "g"
+    }
+  }
+}

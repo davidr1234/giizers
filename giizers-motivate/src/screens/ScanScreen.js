@@ -4,16 +4,25 @@ import "animate.css";
 import colafrosch from "../img/cola-froeschli.jpg";
 import Item from "./stuff/Item.js";
 import BarcodeScannerComponent from "react-qr-barcode-scanner";
-import rivella from "../7610097111072";
 
 export default function ScanScreen(props) {
-  const [data, setData] = React.useState("Not Found");
+  const [data, setData] = React.useState({});
 
-  const imageLoader = () => {
-    var imagePath = rivella.image.original;
-    console.log(imagePath);
+  const imageLoader = (gtin) => {
+    let productPath = "data/"+gtin+".json"
 
-    return <img src={imagePath} />;
+    fetch(productPath ,{
+      headers : { 
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+       }
+    }
+    ).then(function(response){
+      return response.json();
+    }).then(function(myJson) {
+      setData(myJson);
+     });
+
   };
 
   const onAddClick = () => {
@@ -45,20 +54,14 @@ export default function ScanScreen(props) {
           width={500}
           height={500}
           onUpdate={(err, result) => {
-            if (result) setData(imageLoader);
+            if (result) imageLoader(result.text)
             else
-              setData(
-                <div style={{ textAlign: "center" }}>
-                  Bitte platzieren Sie den Strichcode vor die Kamera
-                </div>
-              );
+              setData({});
           }}
         />
-
-        <p>{data}</p>
       </div>
 
-      <Item item={{ title: "Eier", image: colafrosch, co2: 3, wohl: 4 }}></Item>
+      <Item item={{ title: data.name, image: data.image?.original, co2: data.m_check2?.carbon_footprint?.ground_and_sea_cargo?.rating, wohl: 4 }}></Item>
     </MiScreen>
   );
 }

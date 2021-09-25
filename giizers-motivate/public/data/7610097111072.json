@@ -1,0 +1,27 @@
+{
+  "id": "120223000000",
+  "language": "de",
+  "name": "Rivella Rot",
+  "image": {
+    "original": "https://image.migros.ch/original/f6e898166ae9ebf6b712ea0a4dc2ce2894cb4cd3/rivella-rot.jpg",
+    "stack": "https://image.migros.ch/{stack}/f6e898166ae9ebf6b712ea0a4dc2ce2894cb4cd3/rivella-rot.jpg"
+  },
+  "price": {
+    "valid_from": "2018-01-29T00:00:00+0100",
+    "valid_to": "9999-12-31T23:59:59+0100",
+    "currency": "CHF",
+    "source": "PriceRepository",
+    "item": {
+      "price": 1.45,
+      "quantity": 1,
+      "unit": "CU",
+      "varying_quantity": false,
+      "display_quantity": "500ml"
+    },
+    "base": {
+      "price": 0.29,
+      "quantity": 100,
+      "unit": "ml"
+    }
+  }
+}
