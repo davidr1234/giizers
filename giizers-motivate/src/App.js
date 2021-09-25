@@ -10,6 +10,8 @@ function App() {
   const imageLoader = () => {
     return (
       <div>
+        
+
         <img src="https://image.migros.ch/2017-large/6fa8aec688e81a86612d4208aa87da936f408991/focus-vitamin-water-active.jpg"/>
       </div>
     )
