@@ -48,11 +48,16 @@ export default function Item(props) {
           }}
         >
           Klima{" "}
-          <div>
-            {[0, 1, 2, 3, 4].map((it) => (
-              <Star full={props.item.co2 > it}></Star>
-            ))}
-          </div>
+          {(props.item.co2) ? 
+            <div>
+              {[0, 1, 2, 3, 4].map((it) => (
+                <Star full={props.item.co2 > it}></Star>
+              ))}
+            </div>
+        : <div>
+              -
+            </div>
+          }
         </div>
         <div
           style={{
@@ -62,11 +67,16 @@ export default function Item(props) {
           }}
         >
           Tierwohl{" "}
-          <div>
-            {[0, 1, 2, 3, 4].map((it) => (
-              <Star full={props.item.wohl > it}></Star>
-            ))}
-          </div>
+          {(props.item.wohl) ? 
+            <div>
+              {[0, 1, 2, 3, 4].map((it) => (
+                <Star full={props.item.wohl > it}></Star>
+              ))}
+            </div>
+          : <div>
+              -
+            </div>
+          }
         </div>
       </div>
     </div>

@@ -1,0 +1,44 @@
+{
+  "id": "165032900000",
+  "language": "de",
+  "name": "Pelican ASC Regenbogenforelle",
+  "image": {
+    "original": "https://image.migros.ch/original/8e0b1e3d9f99003970eeb5a5cf30b91f6bf89177/pelican-asc-regenbogenforelle.jpg",
+    "stack": "https://image.migros.ch/{stack}/8e0b1e3d9f99003970eeb5a5cf30b91f6bf89177/pelican-asc-regenbogenforelle.jpg"
+  },
+  "m_check2": {
+    "carbon_footprint": {
+      "image": {
+        "original": "https://image.migros.ch/original/abb4b97a2571bff7f68e554bdcc630ffbef18d57.svg",
+        "stack": "https://image.migros.ch/{stack}/abb4b97a2571bff7f68e554bdcc630ffbef18d57.svg"
+      },
+      "ground_and_sea_cargo": {
+        "kg_co2": 1.953,
+        "kg_co2_range": "1 - 1.9 kg CO₂eq / kg",
+        "co2_in_car_km": 10,
+        "rating": 4,
+        "production_in_percent": 90,
+        "packaging_in_percent": 9,
+        "transport_in_percent": 1
+      }
+    }
+  },
+  "price": {
+    "valid_from": "2020-10-27T00:00:00+0100",
+    "valid_to": "9999-12-31T23:59:59+0100",
+    "currency": "CHF",
+    "source": "PriceRepository",
+    "item": {
+      "price": 3.5,
+      "quantity": 1,
+      "unit": "CU",
+      "varying_quantity": false,
+      "display_quantity": "250g"
+    },
+    "base": {
+      "price": 1.4,
+      "quantity": 100,
+      "unit": "g"
+    }
+  }
+}

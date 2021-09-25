@@ -1,0 +1,46 @@
+{
+  "id": "196045000600",
+  "language": "de",
+  "name": "Bio Eier Schweiz Freiland, 6x53g+",
+  "image": {
+    "original": "https://image.migros.ch/original/f5f3c070d20b993a231c3c78df014bcd29c29a64/bio-eier-schweiz-freiland-6x53g.jpg",
+    "stack": "https://image.migros.ch/{stack}/f5f3c070d20b993a231c3c78df014bcd29c29a64/bio-eier-schweiz-freiland-6x53g.jpg"
+  },
+  "m_check2": {
+    "carbon_footprint": {
+      "image": {
+        "original": "https://image.migros.ch/original/b32b6bbf2bf64dd1badce8c518c6721e7d32da4c.svg",
+        "stack": "https://image.migros.ch/{stack}/b32b6bbf2bf64dd1badce8c518c6721e7d32da4c.svg"
+      },
+      "ground_and_sea_cargo": {
+        "kg_co2": 2.808,
+        "kg_co2_range": "2 - 4.7 kg CO₂eq / kg",
+        "co2_in_car_km": 15,
+        "rating": 3,
+        "production_in_percent": 93,
+        "packaging_in_percent": 6,
+        "transport_in_percent": 1
+      }
+    },
+    "animal_welfare": {
+      "rating": 5,
+      "label": "Tierwohl",
+      "image": {
+        "original": "https://image.migros.ch/original/f86d3563a7fd5eec3fdca51cffd4a821bb580369.svg",
+        "stack": "https://image.migros.ch/{stack}/f86d3563a7fd5eec3fdca51cffd4a821bb580369.svg"
+      }
+    }
+  },
+  "price": {
+    "valid_from": "2018-01-24T00:00:00+0100",
+    "valid_to": "9999-12-31T23:59:59+0100",
+    "currency": "CHF",
+    "source": "PriceRepository",
+    "item": {
+      "price": 4.85,
+      "quantity": 1,
+      "unit": "CU",
+      "varying_quantity": false
+    }
+  }
+}

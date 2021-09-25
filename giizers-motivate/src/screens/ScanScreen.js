@@ -42,7 +42,7 @@ export default function ScanScreen(props) {
       <div
         style={{
           width: "100%",
-          height: 420,
+          height: "39.6%",
           backgroundColor: "white",
           marginTop: 64,
           marginBottom: 48,
@@ -51,8 +51,8 @@ export default function ScanScreen(props) {
         }}
       >
         <BarcodeScannerComponent
-          width={500}
-          height={500}
+          width={'100%'}
+          height={'100%'}
           onUpdate={(err, result) => {
             if (result) imageLoader(result.text)
             else
@@ -61,7 +61,7 @@ export default function ScanScreen(props) {
         />
       </div>
 
-      <Item item={{ title: data.name, image: data.image?.original, co2: data.m_check2?.carbon_footprint?.ground_and_sea_cargo?.rating, wohl: 4 }}></Item>
+      <Item item={{ title: data.name, image: data.image?.original, co2: data.m_check2?.carbon_footprint?.ground_and_sea_cargo?.rating, wohl: data.m_check2?.animal_welfare?.rating }}></Item>
     </MiScreen>
   );
 }
