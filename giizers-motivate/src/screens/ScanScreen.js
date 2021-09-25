@@ -4,7 +4,7 @@ import "animate.css";
 import colafrosch from "../img/cola-froeschli.jpg";
 import Item from "./stuff/Item.js";
 import BarcodeScannerComponent from "react-qr-barcode-scanner";
-import rivella from '../7610097111072';
+import rivella from "../7610097111072";
 
 export default function ScanScreen(props) {
   const [data, setData] = React.useState("Not Found");
@@ -16,11 +16,19 @@ export default function ScanScreen(props) {
     return <img src={imagePath} />;
   };
 
+  const onAddClick = () => {
+    let p = props.appState.products;
+    console.log(p);
+    p.push({ title: "Eier", image: colafrosch, co2: 3, wohl: 4 });
+    props.appState.setProducts(p);
+    props.appState.navigateTo("SCAN-END");
+  };
+
   return (
     <MiScreen
       logo="TOP-RIGHT"
       btnMainText="Hinzufügen"
-      onButtonClick={() => props.navigateTo("SCAN-END")}
+      onButtonClick={onAddClick}
     >
       <div
         style={{

@@ -5,13 +5,12 @@
 
 .mi-screen {
     width: calc(100% - 48px);
-    height: calc(100% - 48px);
     padding: 24px;
     background-color: #f60;
     font-family: 'FGD', 'Arial Narrow', Arial, sans-serif;
     font-stretch: expanded;
     position: relative;
-    margin-bottom: 64px;
+    padding-bottom: 128px;
 }
 
 .mi-screen .top-right-logo {

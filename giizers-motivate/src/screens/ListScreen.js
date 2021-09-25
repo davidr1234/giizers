@@ -1,20 +1,15 @@
 import MiScreen from "./MiScreen.js";
 import "animate.css";
-import colafrosch from "../img/cola-froeschli.jpg";
 import Item from "./stuff/Item.js";
 
 export default function ListScreen(props) {
-  const items = [
-    { title: "Eier", image: colafrosch, co2: 3, wohl: 4 },
-    { title: "Cola", image: colafrosch, co2: 2, wohl: 5 },
-    { title: "Wasser", image: colafrosch, co2: 5, wohl: 4 },
-  ];
+  const items = props.appState.products;
 
   return (
     <MiScreen
       logo="TOP-RIGHT"
       btnMainText="Scannen"
-      onButtonClick={() => props.navigateTo("SCAN")}
+      onButtonClick={() => props.appState.navigateTo("SCAN")}
     >
       <div style={{ height: 48, width: "100%" }}></div>
       {items.map((item) => {
@@ -32,7 +27,7 @@ export default function ListScreen(props) {
             width: "100%",
             textTransform: "uppercase",
           }}
-          onClick={() => props.navigateTo("CHECKOUT")}
+          onClick={() => props.appState.navigateTo("CHECKOUT")}
         >
           ZUR KASSE
         </button>

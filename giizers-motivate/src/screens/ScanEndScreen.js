@@ -3,12 +3,12 @@ import "animate.css";
 import youwin from "../img/youwon.png";
 
 export default function ScanEndScreen(props) {
+  const onEndClick = () => {
+    props.appState.setNumLots(props.appState.numLots + 1);
+    props.appState.navigateTo("LIST");
+  };
   return (
-    <MiScreen
-      logo="TOP-RIGHT"
-      btnMainText="Awesome"
-      onButtonClick={() => props.navigateTo("LIST")}
-    >
+    <MiScreen logo="TOP-RIGHT" btnMainText="Awesome" onButtonClick={onEndClick}>
       <div
         style={{ width: "100%", textAlign: "center", marginTop: 128 }}
         className="animate__animated animate__rubberBand"
