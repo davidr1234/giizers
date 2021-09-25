@@ -12,26 +12,31 @@ export default function ListScreen(props) {
       onButtonClick={() => props.appState.navigateTo("SCAN")}
     >
       <div style={{ height: 48, width: "100%" }}></div>
+      {items.length == 0 && (
+        <div style={{ marginBottom: 64 }}>Noch keine Einkäufe.</div>
+      )}
       {items.map((item) => {
         return <Item item={item}></Item>;
       })}
-      <div className="">
-        <button
-          style={{
-            backgroundColor: "inherit",
-            border: "3px solid white",
-            color: "white",
-            font: "inherit",
-            padding: "12px 24px",
-            borderRadius: 3,
-            width: "100%",
-            textTransform: "uppercase",
-          }}
-          onClick={() => props.appState.navigateTo("CHECKOUT")}
-        >
-          ZUR KASSE
-        </button>
-      </div>
+      {items.length > 0 && (
+        <div className="">
+          <button
+            style={{
+              backgroundColor: "inherit",
+              border: "3px solid white",
+              color: "white",
+              font: "inherit",
+              padding: "12px 24px",
+              borderRadius: 3,
+              width: "100%",
+              textTransform: "uppercase",
+            }}
+            onClick={() => props.appState.navigateTo("CHECKOUT")}
+          >
+            ZUR KASSE
+          </button>
+        </div>
+      )}
     </MiScreen>
   );
 }

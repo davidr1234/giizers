@@ -8,7 +8,7 @@ export default function ScanEndScreen(props) {
     props.appState.navigateTo("LIST");
   };
   return (
-    <MiScreen logo="TOP-RIGHT" btnMainText="Awesome" onButtonClick={onEndClick}>
+    <MiScreen logo="TOP-RIGHT" btnMainText="Mega" onButtonClick={onEndClick}>
       <div
         style={{ width: "100%", textAlign: "center", marginTop: 128 }}
         className="animate__animated animate__rubberBand"

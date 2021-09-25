@@ -11,9 +11,9 @@ import WinPrizeScreen from "./screens/WinPrizeScreen";
 function App() {
   const [screen, setScreen] = React.useState("START");
   const [products, setProducts] = React.useState([
-    { title: "Eier", image: colafrosch, co2: 3, wohl: 4 },
-    { title: "Cola", image: colafrosch, co2: 2, wohl: 5 },
-    { title: "Wasser", image: colafrosch, co2: 5, wohl: 4 },
+    // { title: "Eier", image: colafrosch, co2: 3, wohl: 4 },
+    // { title: "Cola", image: colafrosch, co2: 2, wohl: 5 },
+    // { title: "Wasser", image: colafrosch, co2: 5, wohl: 4 },
   ]);
   const [numLots, setNumLots] = React.useState(0);
 

@@ -38,7 +38,7 @@ export default function CheckoutScreen(props) {
         {numWon}/10 Lose durch nachhaltige Einkäufe gewonnen!
       </div>
 
-      <Item item={{ title: "Eier", image: colafrosch, co2: 3, wohl: 4 }}></Item>
+      {/* <Item item={{ title: "Eier", image: colafrosch, co2: 3, wohl: 4 }}></Item> */}
     </MiScreen>
   );
 }
