@@ -13,7 +13,7 @@ function App() {
   const navigateTo = (where) => {
     setScreen(where);
   };
-
+  
   return (
     <div className="App">
       {screen == "START" && (
