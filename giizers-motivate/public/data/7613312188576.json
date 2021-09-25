@@ -1,0 +1,44 @@
+{
+  "id": "105245900000",
+  "language": "de",
+  "name": "YOU Genius Mix",
+  "image": {
+    "original": "https://image.migros.ch/original/bcaab494143d0f9286b978b8973c6bec78ab95f7/you-genius-mix.jpg",
+    "stack": "https://image.migros.ch/{stack}/bcaab494143d0f9286b978b8973c6bec78ab95f7/you-genius-mix.jpg"
+  },
+  "m_check2": {
+    "carbon_footprint": {
+      "image": {
+        "original": "https://image.migros.ch/original/a9affad9935cc5bb4e06e54a4b00e059da921291.svg",
+        "stack": "https://image.migros.ch/{stack}/a9affad9935cc5bb4e06e54a4b00e059da921291.svg"
+      },
+      "ground_and_sea_cargo": {
+        "kg_co2": 0.947,
+        "kg_co2_range": "0 - 0.9 kg CO₂eq / kg",
+        "co2_in_car_km": 5,
+        "rating": 5,
+        "production_in_percent": 80,
+        "packaging_in_percent": 18,
+        "transport_in_percent": 2
+      }
+    }
+  },
+  "price": {
+    "valid_from": "2018-03-08T00:00:00+0100",
+    "valid_to": "9999-12-31T23:59:59+0100",
+    "currency": "CHF",
+    "source": "PriceRepository",
+    "item": {
+      "price": 3.9,
+      "quantity": 1,
+      "unit": "CU",
+      "varying_quantity": false,
+      "display_quantity": "170g"
+    },
+    "base": {
+      "price": 2.29,
+      "quantity": 100,
+      "unit": "g"
+    }
+  }
+}
