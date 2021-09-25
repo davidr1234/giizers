@@ -1,0 +1,41 @@
+@font-face {
+    font-family: 'FGD';
+    src: url('../img/FranklinRegular.ttf') format('truetype');
+}
+
+.mi-screen {
+    width: calc(100% - 48px);
+    height: calc(100% - 48px);
+    padding: 24px;
+    background-color: #f60;
+    font-family: 'FGD', 'Arial Narrow', Arial, sans-serif;
+    font-stretch: expanded;
+    position: relative;
+    margin-bottom: 64px;
+}
+
+.mi-screen .top-right-logo {
+    display: block;
+    text-align: right;
+}
+
+.mi-screen .top-right-logo img {
+    width: 33%;
+}
+
+.mi-main-button-wrap {
+    height: 64px;
+    width: calc(100% - 48px);
+    position: fixed;
+    bottom: 0;
+}
+
+button.mi-main-button {
+    background-color: white;
+    border: none;
+    font: inherit;
+    padding: 12px 24px;
+    border-radius: 3px;
+    width: 100%;
+    text-transform: uppercase;
+}
